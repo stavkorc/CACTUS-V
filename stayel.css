@@ -1,0 +1,169 @@
+body{
+	background-image:url(im/download.jpg);
+}
+
+#t {
+	background-color:white;
+	color:#101010;
+	border:7px solid #59534F;
+	box-shadow:10px 10px 7px #000000;
+	width: 300px;
+	text-align:center;
+}
+
+#vide {
+	border:7px solid #59534F;
+	box-shadow:10px 10px 7px #000000;
+	border-radius:70px;
+}
+
+#h {
+	background-color:white;
+	color:#101010;
+	border:7px solid #59534F;
+	box-shadow:10px 10px 7px #000000;
+	width: 300px;
+	text-align:center;
+}
+
+#bu{
+	width: 150px;
+	height: 50px;
+	border:7px solid #676767;
+	background-color:#FFFFFF;
+	border-radius:100px;
+	margin: 5px;
+  opacity:1;
+}
+
+#bu:hover {
+	opacity:0.8;
+}
+
+#mar {
+    margin: 50px;
+	border:0px solid #59534F;
+	border-radius: 20%;
+}
+
+#y {
+	background-color:white;
+	color:#101010;
+	border:7px solid #59534F;
+	box-shadow:10px 10px 7px #000000;
+	width: 100px;
+    margin: 75px;
+	text-align:center;
+}
+
+#rlt {
+    margin: 20px;
+}
+
+#ani {
+	transform: scale(0.5);
+	transition:5s all;
+
+	opacity:0.8;
+	border:7px solid #59534F;
+	box-shadow:10px 10px 7px #000000;
+}
+#ani:hover{
+	transform: rotate(180deg) scale(0.5);
+	
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+  
